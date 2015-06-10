@@ -1,0 +1,107 @@
+2015-06-09T17:06:46.252674+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-06-09T17:06:47.404719+00:00 app[web.1]: [2015-06-09 17:06:47] FATAL SignalException: SIGTERM
+2015-06-09T17:06:47.404724+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2015-06-09T17:06:47.404729+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2015-06-09T17:06:47.404727+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2015-06-09T17:06:47.404730+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2015-06-09T17:06:47.404732+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.1/lib/rack/handler/webrick.rb:35:in `run'
+2015-06-09T17:06:47.404733+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.1/lib/rack/server.rb:286:in `start'
+2015-06-09T17:06:47.404734+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/server.rb:80:in `start'
+2015-06-09T17:06:47.404736+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2015-06-09T17:06:47.404738+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2015-06-09T17:06:47.404739+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+2015-06-09T17:06:47.404741+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2015-06-09T17:06:47.404742+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands.rb:17:in `<top (required)>'
+2015-06-09T17:06:47.404744+00:00 app[web.1]: 	bin/rails:8:in `require'
+2015-06-09T17:06:47.404745+00:00 app[web.1]: 	bin/rails:8:in `<main>'
+2015-06-09T17:06:47.405048+00:00 app[web.1]: [2015-06-09 17:06:47] INFO  going to shutdown ...
+2015-06-09T17:06:47.405138+00:00 app[web.1]: [2015-06-09 17:06:47] INFO  WEBrick::HTTPServer#start done.
+2015-06-09T17:06:47.405230+00:00 app[web.1]: Exiting
+2015-06-09T17:06:49.725622+00:00 heroku[web.1]: Process exited with status 143
+2015-06-10T03:54:26.784861+00:00 heroku[api]: Starting process with command `bash` by davidstulajter@gmail.com
+2015-06-10T03:54:30.706530+00:00 heroku[run.2602]: Awaiting client
+2015-06-10T03:54:30.737688+00:00 heroku[run.2602]: Starting process with command `bash`
+2015-06-10T03:54:31.097884+00:00 heroku[run.2602]: State changed from starting to up
+2015-06-10T04:00:01.644907+00:00 heroku[web.1]: Unidling
+2015-06-10T04:00:01.644907+00:00 heroku[web.1]: State changed from down to starting
+2015-06-10T04:00:08.037019+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 5350 -e production`
+2015-06-10T04:00:13.948541+00:00 app[web.1]: [2015-06-10 04:00:13] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-06-10T04:00:13.948518+00:00 app[web.1]: [2015-06-10 04:00:13] INFO  WEBrick 1.3.1
+2015-06-10T04:00:13.948936+00:00 app[web.1]: [2015-06-10 04:00:13] INFO  WEBrick::HTTPServer#start: pid=3 port=5350
+2015-06-10T04:00:14.473392+00:00 heroku[web.1]: State changed from starting to up
+2015-06-10T04:00:15.687503+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=57ffba68-e28f-48c9-ae44-b8a7a74678e9 fwd="99.127.159.73" dyno=web.1 connect=1ms service=71ms status=200 bytes=480
+2015-06-10T04:00:15.829640+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=200485f4-6796-44ef-a0c0-47e826295e91 fwd="99.127.159.73" dyno=web.1 connect=1ms service=4ms status=200 bytes=228
+2015-06-10T04:00:15.630026+00:00 app[web.1]: => Booting WEBrick
+2015-06-10T04:00:15.630032+00:00 app[web.1]: => Rails 4.2.1 application starting in production on http://0.0.0.0:5350
+2015-06-10T04:00:15.630034+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-06-10T04:00:15.630036+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 04:00:15 +0000
+2015-06-10T04:00:15.630035+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-06-10T04:00:15.674204+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T04:00:15.683367+00:00 app[web.1]: Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+2015-06-10T04:00:15.687008+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T04:00:15.688340+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+2015-06-10T04:00:15.707305+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=1b9980d3-66f9-4f7b-aed1-42615fdec2dc fwd="99.127.159.73" dyno=web.1 connect=1ms service=25ms status=304 bytes=397
+2015-06-10T04:00:15.685222+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 04:00:15 +0000
+2015-06-10T04:00:15.687972+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T04:00:15.682860+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T04:00:16.957506+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=f8cf1d92-67cf-4307-aa6f-87e0e72b4f5f fwd="99.127.159.73" dyno=web.1 connect=1ms service=4ms status=304 bytes=133
+2015-06-10T04:22:07.909512+00:00 heroku[run.2602]: Client connection closed. Sending SIGHUP to all processes
+2015-06-10T04:22:09.175723+00:00 heroku[run.2602]: State changed from up to complete
+2015-06-10T04:22:09.162883+00:00 heroku[run.2602]: Process exited with status 129
+2015-06-10T04:23:16.346855+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=cbc20532-b9f8-4933-8a76-bf3a4d5608f3 fwd="99.127.159.73" dyno=web.1 connect=0ms service=13ms status=304 bytes=397
+2015-06-10T04:23:16.355796+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 04:23:16 +0000
+2015-06-10T04:23:16.359626+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T04:23:16.359098+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T04:23:16.359829+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+2015-06-10T04:23:16.519482+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=df2cde73-dd02-4abb-bdbe-c9d8ade380d6 fwd="99.127.159.73" dyno=web.1 connect=1ms service=6ms status=200 bytes=228
+2015-06-10T05:25:46.533269+00:00 heroku[web.1]: Idling
+2015-06-10T05:25:46.533964+00:00 heroku[web.1]: State changed from up to down
+2015-06-10T05:25:49.461328+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-06-10T05:25:50.258168+00:00 app[web.1]: [2015-06-10 05:25:50] FATAL SignalException: SIGTERM
+2015-06-10T05:25:50.258176+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2015-06-10T05:25:50.258174+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2015-06-10T05:25:50.258177+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2015-06-10T05:25:50.258178+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2015-06-10T05:25:50.258180+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.1/lib/rack/handler/webrick.rb:35:in `run'
+2015-06-10T05:25:50.258181+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.1/lib/rack/server.rb:286:in `start'
+2015-06-10T05:25:50.258182+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/server.rb:80:in `start'
+2015-06-10T05:25:50.258184+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2015-06-10T05:25:50.258185+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2015-06-10T05:25:50.258189+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands.rb:17:in `<top (required)>'
+2015-06-10T05:25:50.258188+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2015-06-10T05:25:50.258192+00:00 app[web.1]: 	bin/rails:8:in `<main>'
+2015-06-10T05:25:50.258187+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+2015-06-10T05:25:50.258239+00:00 app[web.1]: Exiting
+2015-06-10T05:25:50.258220+00:00 app[web.1]: [2015-06-10 05:25:50] INFO  WEBrick::HTTPServer#start done.
+2015-06-10T05:25:50.258198+00:00 app[web.1]: [2015-06-10 05:25:50] INFO  going to shutdown ...
+2015-06-10T05:25:50.258191+00:00 app[web.1]: 	bin/rails:8:in `require'
+2015-06-10T05:25:51.470728+00:00 heroku[web.1]: Process exited with status 143
+2015-06-10T06:04:31.710734+00:00 heroku[web.1]: Unidling
+2015-06-10T06:04:31.711181+00:00 heroku[web.1]: State changed from down to starting
+2015-06-10T06:04:35.749209+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 24373 -e production`
+2015-06-10T06:04:40.572101+00:00 app[web.1]: [2015-06-10 06:04:40] INFO  WEBrick::HTTPServer#start: pid=3 port=24373
+2015-06-10T06:04:40.571740+00:00 app[web.1]: [2015-06-10 06:04:40] INFO  WEBrick 1.3.1
+2015-06-10T06:04:40.571770+00:00 app[web.1]: [2015-06-10 06:04:40] INFO  ruby 2.0.0 (2015-04-13) [x86_64-linux]
+2015-06-10T06:04:41.171428+00:00 heroku[web.1]: State changed from starting to up
+2015-06-10T06:04:42.011970+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=ff09e3c6-850a-45f1-b840-9e673ff0ed9a fwd="99.127.159.73" dyno=web.1 connect=2ms service=10ms status=200 bytes=228
+2015-06-10T06:04:42.263534+00:00 app[web.1]: => Booting WEBrick
+2015-06-10T06:04:42.263539+00:00 app[web.1]: => Rails 4.2.1 application starting in production on http://0.0.0.0:24373
+2015-06-10T06:04:42.263573+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2015-06-10T06:04:42.263575+00:00 app[web.1]: => Ctrl-C to shutdown server
+2015-06-10T06:04:42.263576+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 06:04:42 +0000
+2015-06-10T06:04:42.331434+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T06:04:42.343927+00:00 app[web.1]: Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+2015-06-10T06:04:42.348257+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=46ca5b66-dc6c-463a-8bff-c0edb84527c8 fwd="99.127.159.73" dyno=web.1 connect=1ms service=89ms status=200 bytes=480
+2015-06-10T06:04:42.343645+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T06:04:42.674641+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=44d91e55-65f9-4ba5-bb62-2481ea39e98b fwd="99.127.159.73" dyno=web.1 connect=1ms service=10ms status=200 bytes=228
+2015-06-10T06:04:43.786912+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=de423284-726f-4e42-a758-72c8085207b2 fwd="99.127.159.73" dyno=web.1 connect=4ms service=14ms status=304 bytes=397
+2015-06-10T06:04:43.783362+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T06:04:43.780595+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 06:04:43 +0000
+2015-06-10T06:04:43.784030+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T06:04:43.784185+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+2015-06-10T06:34:35.253162+00:00 heroku[router]: at=info method=GET path="/" host=fathomless-earth-3641.herokuapp.com request_id=74a7437a-0825-4d4d-811f-bbccb4d7bdb0 fwd="99.127.159.73" dyno=web.1 connect=1ms service=8ms status=304 bytes=397
+2015-06-10T06:34:35.387469+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=fathomless-earth-3641.herokuapp.com request_id=405fa5df-baac-4726-820b-061c3d562bc8 fwd="99.127.159.73" dyno=web.1 connect=2ms service=8ms status=200 bytes=228
+2015-06-10T06:34:35.248168+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 06:34:35 +0000
+2015-06-10T06:34:35.250958+00:00 app[web.1]:   Rendered text template (0.0ms)
+2015-06-10T06:34:35.250372+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
+2015-06-10T06:34:35.251177+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
