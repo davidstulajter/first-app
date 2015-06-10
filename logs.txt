@@ -104,4 +104,7 @@
 2015-06-10T06:34:35.248168+00:00 app[web.1]: Started GET "/" for 99.127.159.73 at 2015-06-10 06:34:35 +0000
 2015-06-10T06:34:35.250958+00:00 app[web.1]:   Rendered text template (0.0ms)
 2015-06-10T06:34:35.250372+00:00 app[web.1]: Processing by ApplicationController#hello as HTML
-2015-06-10T06:34:35.251177+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+2015-06-10T06:34:35.251177+00:00 app[web.1]: Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms) 
+
+
+
